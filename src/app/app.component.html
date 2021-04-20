@@ -3,29 +3,25 @@
 </style>
 
 
-<div class="container ">
-AngularBasics 
+<div class="container">
+<h1 style="margin-left:250px;">Artist</h1>
 
-<div></div>loop through artisit here
- <strong> {{query }}</strong>
-
-
- <div class="position-absolute container" style="left: 0; z-index:10">
-  <div class="row justify-content-center">
-    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
-        *ngFor="let artist of artists">
-            <div class="media">
-              <div class="media-body align-self-center">
-                <h5 class="m-0">{{artist.name}}</h5>
-                {{ artist.reknown }}
-              </div><!-- media body -->
-            </div><!-- media -->
-        </a><!-- link -->
-      </div><!-- list-group -->
-    </div><!-- col -->
-  </div><!-- row -->
-</div><!-- container -->
+ <div class="position-absolute container"       style="left: 0; z-index:10 ">
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+            *ngFor="let artist of artists">
+                <div class="media">
+                <div class="media-body align-self-center">
+                    <h5 class="m-0">{{artist.name}}</h5>
+                    {{ artist.reknown }}
+                </div><!-- media body -->
+                </div><!-- media -->
+            </a><!-- link -->
+        </div><!-- list-group -->
+        </div><!-- col -->
+    </div><!-- row -->
+    </div><!-- container -->
 
 </div> 
