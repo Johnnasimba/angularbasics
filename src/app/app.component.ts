@@ -10,13 +10,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   query: string;
   artists: object;
-  showArtist(e, item) {
+  showArtist( item) {
     
     this.query = item
     
   }
   constructor() {
-    this.query = 'John';
     this.artists = [
       {
         "name":"Barot Bellingham",
