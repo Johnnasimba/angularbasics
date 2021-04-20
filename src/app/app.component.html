@@ -4,14 +4,15 @@
 
 
 <div class="container">
-<h1 style="margin-left:250px;">Artist</h1>
+<h1 style="margin-left:250px;">Artist: {{query}}</h1>
 
  <div class="position-absolute container"       style="left: 0; z-index:10 ">
     <div class="row justify-content-center">
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
         <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
-            *ngFor="let artist of artists">
+            *ngFor="let artist of artists"
+            (click)="showArtist($event, artist.name)">
                 <div class="media">
                 <div class="media-body align-self-center">
                     <h5 class="m-0">{{artist.name}}</h5>
