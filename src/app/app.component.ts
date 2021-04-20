@@ -5,18 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './navbar/navbar.html',
-//   styleUrls: ['./navbar/navbar.styles.css']
-// })
+
 
 export class AppComponent {
   query: string;
-  artist: object;
+  artists: object;
   constructor() {
-    this.query = ' John';
-    this.artist = [
+    this.query = 'John';
+    this.artists = [
       {
         "name":"Barot Bellingham",
         "shortname":"Barot_Bellingham",
